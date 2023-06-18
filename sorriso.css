@@ -1,0 +1,45 @@
+body{
+  position: relative;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.text-container{
+  position: absolute;
+  color: #b7b7b7;
+  text-align: center;
+  width: 100%;
+  margin-top: 150px;
+  font-size: 24px;
+  font-weight:bold; 
+}
+p{
+  margin-top: 50px;
+}
+.stars {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image:url(./Img.jpg);
+  z-index: -1;
+}
+
+.star {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: white;
+  animation: fall 5s linear infinite;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(-100vh);
+  }
+  100% {
+    transform: translateY(100vh);
+  }
+}
